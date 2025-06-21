@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<head>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Noto+Sans+KR:wght@100..900&display=swap');
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkWorke - Shop</title>
+        <div class="header-image">
+        <nav id="navbar" class="navbar">
+            <img class="navbar-img" src="logo.png" alt="Logo">
+            <a href="index.html"><h1 class="nav-button">Home</h1></a>
+            <a href="Shop.html"><h1 class="nav-button">Shop</h1></a>
+            <a href="Contact.html"><h1 class="nav-button">Contact</h1></a>
+        </nav>
+    </div>
+    <div id="navbar-sentinel"></div>
+</head>
+<body>
+  <h3 class="head" style="padding-left: 125px;">DISCORD SERVER TEMPLATES -</h3>
+        <div class="discord-bots">
+                  <button>
+            <a href="index.html">
+                        <div class="product1">
+            <img class="product1img" src="favicon.png" alt="" height="280px" width="280px">
+            <h2 class="product1h2">product1</h2>
+            <h2 class="product1h2">$5.00</h2>
+      </div>
+            </a>
+      </button>
+            <button>
+            <a href="index.html">
+                        <div class="product1">
+            <img class="product2img" src="favicon.png" alt="" height="280px" width="280px">
+            <h2 class="product2h2">product2</h2>
+            <h2 class="product2h2">$1.00</h2>
+      </div>
+            </a>
+      </button>
+                        <button>
+            <a href="index.html">
+                        <div class="product3">
+            <img class="product3img" src="favicon.png" alt="" height="280px" width="280px">
+            <h2 class="product3h2">product3</h2>
+            <h2 class="product3h2">$500.00</h2>
+      </div>
+            </a>
+      </button>
+            <button>
+            <a href="index.html">
+                        <div class="product4">
+            <img class="product4img" src="favicon.png" alt="" height="280px" width="280px">
+            <h2 class="product4h2">product4</h2>
+            <h2 class="product4h2">$15.00</h2>
+      </div>
+            </a>
+      </button>
+      </div>
+
+
+
+
+
+
+
+
+        <h3 class="head" style="padding-left: 125px;">DISCORD BOTS -</h3>
+        <div class="websites">
+                  <button>
+            <a href="index.html">
+                        <div class="product1">
+            <img class="product1img" src="favicon.png" alt="" height="280px" width="280px">
+            <h2 class="product1h2">product5</h2>
+            <h2 class="product1h2">$5.00</h2>
+      </div>
+            </a>
+      </button>
+            <button>
+            <a href="index.html">
+                        <div class="product1">
+            <img class="product2img" src="favicon.png" alt="" height="280px" width="280px">
+            <h2 class="product2h2">product6</h2>
+            <h2 class="product2h2">$1.00</h2>
+      </div>
+            </a>
+      </button>
+                        <button>
+            <a href="index.html">
+                        <div class="product3">
+            <img class="product3img" src="favicon.png" alt="" height="280px" width="280px">
+            <h2 class="product3h2">product7</h2>
+            <h2 class="product3h2">$500.00</h2>
+      </div>
+            </a>
+      </button>
+            <button>
+            <a href="index.html">
+                        <div class="product4">
+            <img class="product4img" src="favicon.png" alt="" height="280px" width="280px">
+            <h2 class="product4h2">product8</h2>
+            <h2 class="product4h2">$15.00</h2>
+      </div>
+            </a>
+      </button>
+      </div>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+    const sentinel = document.getElementById('navbar-sentinel');
+
+    const navbarObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          navbar.classList.add('reveal');
+        } else {
+          navbar.classList.remove('reveal');
+        }
+      },
+      { threshold: 0 }
+    );
+
+    if (sentinel) {
+      navbarObserver.observe(sentinel);
+    }
+  });
+</script>
+<footer>
+      <div class="a">
+                  <a href="contact.html">
+            <h2 class="foot-contact">contact</h2>
+      </a>
+      <a href="shop.html">
+            <h2 class="foot-shop">shop</h2>
+      </a>
+            <a href="tos.html">
+            <h2 class="foot-tos">terms of service</h2>
+      </a>
+      <a href="pp.html">
+            <h2 class="foot-pp">privacy policy</h2>
+      </a>
+            <a href="http://discord.sparkworke.xyz">
+            <h2 class="foot-ds">Discord server</h2>
+      </a>
+      </div>
+</footer>
+</html>

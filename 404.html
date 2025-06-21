@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="404.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkWorke - 404</title>
+        <div class="header-image">
+        <nav id="navbar" class="navbar">
+            <img class="navbar-img" src="logo.png" alt="Logo">
+            <a href="index.html"><h1 class="nav-button">Home</h1></a>
+            <a href="Shop.html"><h1 class="nav-button">Shop</h1></a>
+            <a href="Contact.html"><h1 class="nav-button">Contact</h1></a>
+        </nav>
+    </div>
+    <div id="navbar-sentinel"></div>
+</head>
+<body>
+    <img class="cent-logo" src="broken-robot-fix-hand-drawn-vector-cartoon-illustration-trying-to-itself-81326219.webp" alt="" height="350" width="350">
+    <h2 class="cent-h2">are you lost?</h2>
+    <h3 class="cent-h3">you arent supposed to be here!</h3>
+    <a href="shop.html">
+            <button class="cent-but">
+        <h2 class="cent-but-h2">continue shopping</h2>
+    </button>
+    </a>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+    const sentinel = document.getElementById('navbar-sentinel');
+
+    const navbarObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          navbar.classList.add('reveal');
+        } else {
+          navbar.classList.remove('reveal');
+        }
+      },
+      { threshold: 0 }
+    );
+
+    if (sentinel) {
+      navbarObserver.observe(sentinel);
+    }
+  });
+</script>
+<footer>
+      <div class="a">
+                  <a href="contact.html">
+            <h2 class="foot-contact">contact</h2>
+      </a>
+      <a href="shop.html">
+            <h2 class="foot-shop">shop</h2>
+      </a>
+            <a href="tos.html">
+            <h2 class="foot-tos">terms of service</h2>
+      </a>
+      <a href="pp.html">
+            <h2 class="foot-pp">privacy policy</h2>
+      </a>
+            <a href="http://discord.sparkworke.xyz">
+            <h2 class="foot-ds">Discord server</h2>
+      </a>
+      </div>
+</footer>
+</html>

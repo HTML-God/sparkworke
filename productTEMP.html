@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="productTEMP.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<head>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Noto+Sans+KR:wght@100..900&display=swap');
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkWorke - [def]</title>
+        <div class="header-image">
+        <nav id="navbar" class="navbar">
+            <img class="navbar-img" src="logo.png" alt="Logo">
+            <a href="index.html"><h1 class="nav-button">Home</h1></a>
+            <a href="Shop.html"><h1 class="nav-button">Shop</h1></a>
+            <a href="Contact.html"><h1 class="nav-button">Contact</h1></a>
+        </nav>
+    </div>
+    <div id="navbar-sentinel"></div>
+</head>
+<body>
+  <div class="space"></div>
+  <h2 class="head" style="text-align: right; font-size:40px; padding-right: 270px;">product 1</h2>
+    <h2 class="fuckinnnnnnnalign" style=" font-size:10px; display:flex;">hjtetjte35tuykte7uykeruytjyrutjrty65uytjurryukjtwuhklkgfsgdfgfdgdfgdfgdfgdfgdf</h2>
+
+  <img src="Ground.png" alt="" height="400" width="400" style="padding-left: 25px; z-index:998;">
+  <h2 class="head" style="text-decoration: underline; padding-left:25px;">how to setup -</h2>
+  <h2 style="font-family: sans-serif; padding-left:25px;"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, dicta unde. Nam quidem, eum culpa quisquam aspernatur quibusdam adipisci magnam alias officia inventore assumenda cupiditate nulla cumque nemo rerum qui.</h2>
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.getElementById('navbar');
+    const sentinel = document.getElementById('navbar-sentinel');
+
+    const navbarObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) {
+          navbar.classList.add('reveal');
+        } else {
+          navbar.classList.remove('reveal');
+        }
+      },
+      { threshold: 0 }
+    );
+
+    if (sentinel) {
+      navbarObserver.observe(sentinel);
+    }
+  });
+</script>
+<footer>
+      <div class="a">
+                  <a href="contact.html">
+            <h2 class="foot-contact">contact</h2>
+      </a>
+      <a href="shop.html">
+            <h2 class="foot-shop">shop</h2>
+      </a>
+            <a href="tos.html">
+            <h2 class="foot-tos">terms of service</h2>
+      </a>
+      <a href="pp.html">
+            <h2 class="foot-pp">privacy policy</h2>
+      </a>
+            <a href="http://discord.sparkworke.xyz">
+            <h2 class="foot-ds">Discord server</h2>
+      </a>
+      </div>
+</footer>
+</html>
